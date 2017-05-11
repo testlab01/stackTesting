@@ -24,40 +24,38 @@ public class stackTesting implements stackInterface {
 
 	private int StackTop;
 	private int MaxSize;
-	private long Stack[];
+	private int Stack[];
 	
 	//constructor for initialize stack
 	public stackTesting(int size){
 		MaxSize = size;
-		Stack = new long[MaxSize];
+		Stack = new int[MaxSize];
 		StackTop = -1;
 	}
 
 	@Override
 	// give top of the element in the stack
 	public int pop() {
-		if(isEmpty() == false){
+		if(isEmpty() == true){
 			return 0;
 		}else {
-			return (int) Stack[StackTop--];
+			return Stack[StackTop--];
 		}
 	}
 
 	@Override
-	public int push(int insertVal) {
+	public void push(int insertVal) {
 		if(isFull() != true){
-			Stack[StackTop ++] = insertVal;
-			return (int) Stack[StackTop];
+			Stack[++StackTop] = insertVal;
 		} else {
-			//stack over floor???
-			return 0;
+			System.out.println("Stack OverFloor");
 		}
 	}
 
 	@Override
 	public int peek() {
-		// TODO
-		return 0;
+		return Stack[StackTop];
+		
 	}
 
 	@Override
@@ -72,9 +70,9 @@ public class stackTesting implements stackInterface {
 	@Override
 	public boolean isEmpty() {
 		if(StackTop == -1){
-			return false;
-		} else {
 			return true;
+		} else {
+			return false;
 		}
 	}
 }
