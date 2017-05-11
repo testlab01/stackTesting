@@ -30,37 +30,37 @@ public class stackTesting implements stackInterface {
 	public stackTesting(int size){
 		MaxSize = size;
 		Stack = new long[MaxSize];
-		StackTop = 0;
+		StackTop = -1;
 	}
-	
+
 	@Override
 	public int pop() {
-		// TODO 
+		// TODO
 		return 0;
 	}
 
 	@Override
 	public int push() {
-		// TODO 
+		// TODO
 		return 0;
 	}
 
 	@Override
 	public int peek() {
-		// TODO 
+		// TODO
 		return 0;
 	}
 
 	@Override
 	public boolean isFull() {
-		// TODO 
+		// TODO
 		return false;
 	}
 
 	@Override
 	public boolean isEmpty() {
-		// TODO 
+		// TODO
 		return false;
 	}
-	
+
 }
