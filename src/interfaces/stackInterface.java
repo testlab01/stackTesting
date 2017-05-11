@@ -16,7 +16,6 @@ limitations under the License.
 * @author Prahveen Thiruchelvam
 */
 
-
 package interfaces;
 
 public interface stackInterface {
