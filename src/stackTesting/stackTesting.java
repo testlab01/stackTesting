@@ -44,9 +44,14 @@ public class stackTesting implements stackInterface {
 	}
 
 	@Override
-	public int push() {
-		// TODO
-		return 0;
+	public int push(int insertVal) {
+		if(isFull() != true){
+			Stack[StackTop ++] = insertVal;
+			return (int) Stack[StackTop];
+		} else {
+			//stack over floor???
+			return 0;
+		}
 	}
 
 	@Override
