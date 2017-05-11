@@ -34,9 +34,13 @@ public class stackTesting implements stackInterface {
 	}
 
 	@Override
+	// give top of the element in the stack
 	public int pop() {
-		// TODO
-		return 0;
+		if(isEmpty() == false){
+			return 0;
+		}else {
+			return (int) Stack[StackTop--];
+		}
 	}
 
 	@Override
@@ -65,5 +69,4 @@ public class stackTesting implements stackInterface {
 			return true;
 		}
 	}
-
 }
