@@ -57,8 +57,11 @@ public class stackTesting implements stackInterface {
 
 	@Override
 	public boolean isFull() {
-		// TODO
-		return false;
+		if(StackTop == MaxSize){
+			return true;
+		}else {
+			return false;
+		}
 	}
 
 	@Override
