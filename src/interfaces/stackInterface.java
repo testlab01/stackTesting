@@ -20,9 +20,8 @@ package interfaces;
 
 public interface stackInterface {
 	public int pop(); //insert into stack
-	public int push(); //remove from stack
+	public int push(int x); //remove from stack
 	public int peek(); //get the top of the element
 	public boolean isFull(); //check if stack is empty
 	public boolean isEmpty(); //check is stack is empty 
-
 }
