@@ -59,8 +59,11 @@ public class stackTesting implements stackInterface {
 
 	@Override
 	public boolean isEmpty() {
-		// TODO
-		return false;
+		if(StackTop == -1){
+			return false;
+		} else {
+			return true;
+		}
 	}
 
 }
